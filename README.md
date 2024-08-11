@@ -16,7 +16,7 @@ bulckan will show in the logs all the steps to deploy the compose file. It will 
 - Docker
 - Docker Compose
 - Access to a GitHub repository (public or private)
-
+ 
 bulckan only monitors changes in the specified path and will only update the configuration of the docker compose file. It does not monitor if the images have been updated, use [Watchtower](https://containrrr.dev/watchtower/?ref=selfh.st) for that by deploying it with bulckan or implement a workflow that changes the image version in the compose when the image is rebuilt.
 
 Note: To test the functionality, it is possible to deploy bulckan as configured. The application points to a branch of the same repository with the Docker Compose files needed to deploy an Apache container.
